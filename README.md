@@ -32,3 +32,8 @@ https://github.com/GoogleCloudPlatform/gcsfuse
 
 # GCP remote host mysql only within the project and configured Network connection. 
 ``mysql --host=104.197.38.137 --user=root --password``
+
+
+# Connecting Cloud SQL to mysqlworkbench locally is a bit of a trick. Follow the below closely to create cloud proxy. 
+https://cloud.google.com/sql/docs/mysql/connect-external-app?hl=en_US&_ga=2.217088278.-1885104447.1555644649#proxy 
+
