@@ -17,18 +17,18 @@ Make sure you are authenticated and have rights to both projects with the same a
 
 https://stackoverflow.com/questions/27235349/copy-files-between-two-google-cloud-instances 
 
-#Initiate auth for vm 
-``gcloud init
-gcloud iam service-accounts create anyname``
+# Initiate auth for vm 
+``gcloud init``
+``gcloud iam service-accounts create anyname``
 
-#Upload files to buckets, please initiate as above with gcloud init first.
+# Upload files to buckets, please initiate as above with gcloud init first.
 ``gsutil cp file.csv gs://mybucket``
 
-#GCP mount bucket
+# GCP mount bucket
 ``gcsfuse project_name testmount/``
 https://cloud.google.com/storage/docs/gcs-fuse
 https://github.com/GoogleCloudPlatform/gcsfuse 
 
 
-#GCP remote host mysql only within the project and configured Network connection. 
+# GCP remote host mysql only within the project and configured Network connection. 
 ``mysql --host=104.197.38.137 --user=root --password``
